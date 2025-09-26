@@ -1,13 +1,13 @@
-from app.core.db import Base
-from app.models.category import Category
-from app.models.post import Post
-from app.models.refresh_token import RefreshToken
-from app.models.user import User
+from .base import BaseModel  # noqa
+from .category import Category  # noqa
+from .post import Post  # noqa
+from .refresh_token import RefreshToken  # noqa
+from .user import User  # noqa
 
-__all__ = [
-    'Base',
-    'User',
-    'Post',
-    'Category',
-    'RefreshToken',
-]
+# __all__ = [
+#     'Base',
+#     'User',
+#     'Post',
+#     'Category',
+#     'RefreshToken',
+# ]
