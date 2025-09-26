@@ -52,6 +52,7 @@
    ```
 4. Создайте файл с переменными окружения .env. Укажите в файле значения локальных переменных, представленных в образце .env.example
    ```bach
+   cd app/
    touch .env
    ```
 5. Примените миграции и запустите проект.
@@ -77,4 +78,4 @@
 1. [Swagger](http://localhost:8000/docs)
 2. [ReDoc](http://localhost:8000/redoc)
 
-## Автор проекта - [Коробейников Лев Сергеевич](https://github.com/LevKorobeinikov)
+## Автор  - [Коробейников Лев Сергеевич](https://github.com/LevKorobeinikov)
