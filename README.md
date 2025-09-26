@@ -28,8 +28,8 @@
 1. Клонирование репозитория:
 
    ```bash
-   git clone git@github.com:LevKorobeinikov/test_taks_for_ITWorld.git
-   cd test_taks_for_ITWorld
+   git clone git@github.com:LevKorobeinikov/test_task_for_ITWorld.git
+   cd test_task_for_ITWorld
    ```
 
 2. Создать и активировать виртуальное окружение:
