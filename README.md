@@ -54,11 +54,11 @@
    ```
 4. Создайте файл с переменными окружения .env. Укажите в файле значения локальных переменных, представленных в образце .env.example
    ```bach
-   cd app/
    touch .env
    ```
 5. Примените миграции и запустите проект.
    ```bach
+   deactivate && source venv/bin/activate
    alembic upgrade
    uvicorn app.main:app --reload
    # для новых миграций - alembic revision --autogenerate -m 'описание изменений'
@@ -66,11 +66,30 @@
 
 ## Запуск через докер
 
-1. Соберите образ
+1. Создать и активировать виртуальное окружение:
+
+   Для Windows:
+
+   ```bash
+   python -m venv venv
+   source venv/Scripts/activate
+   ```
+
+   Для Linux/macOS:
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ``
+2. Создайте файл с переменными окружения .env. Укажите в файле значения локальных переменных, представленных в образце .env.example
+   ```bach
+   touch .env
+   ```
+3. Соберите образ
    ```bach
    docker build -t myfastapi .
    ```
-2. Запустите контейнер с пробросом порта
+4. Запустите контейнер с пробросом порта
    ```bach
    docker run -p 8000:8000 myfastapi
    ```
